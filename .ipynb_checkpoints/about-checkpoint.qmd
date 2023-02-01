@@ -1,0 +1,22 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: youtube
+      text: Youtube
+      href: https://www.youtube.com/channel/UCQk9RyBNgXc7ORIsYlOfQrg
+    - icon: github
+      text: Github
+      href: https://github.com/guebin
+
+---
+
+2023년도 동계 WORKSHOP 
+
+파이썬을 이용한 통계자료분석 
+
+<guebin@jbnu.ac.kr>
+
+자연과학대학 본관 205호
