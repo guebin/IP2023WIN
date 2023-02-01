@@ -30,3 +30,17 @@ title-block-banner: true
 - [2022-데이터시각화 06wk-1,2 // 모든영상](https://guebin.github.io/DV2022/posts/2022-10-12-6wk-12.html)
 - [2022-데이터시각화 07wk-1 // 영상1,2](https://guebin.github.io/DV2022/posts/2022-10-17-7wk-1.html)
 - [2022-데이터시각화 08wk-1,2 // 영상1,2](https://guebin.github.io/DV2022/posts/2022-10-24-8wk-12.html)
+
+[**Day3**]
+
+- [2022-데이터시각화 08wk-12](https://guebin.github.io/DV2022/posts/2022-10-24-8wk-12.html#판다스-groupby)
+- [2022-데이터시각화 10wk-1](https://guebin.github.io/DV2022/posts/2022-11-07-10wk-1.html#%ED%8C%90%EB%8B%A4%EC%8A%A4-melt-stack)
+- [2022-데이터시각화 05wk-2](https://guebin.github.io/DV2022/posts/2022-10-06-5wk-2.html#%ED%9B%8C%EB%A5%AD%ED%95%9C-%EC%8B%9C%EA%B0%81%ED%99%94%EB%9E%80)
+- [2022-데이터시각화 07wk-1(https://guebin.github.io/DV2022/posts/2022-10-17-7wk-1.html#%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EC%9D%84-%EB%A7%8E%EC%9D%B4-%EB%A8%B9%EC%9C%BC%EB%A9%B4-%EA%B1%B8%EB%A6%AC%EB%8A%94-%EB%B3%91-1)
+- [2022-데이터시각화 07wk-2](https://guebin.github.io/DV2022/posts/2022-10-19-7wk-2.html#%EC%95%84%EC%9D%B4%EC%8A%A4%ED%81%AC%EB%A6%BC%EC%9D%84-%EB%A7%8E%EC%9D%B4-%EB%A8%B9%EC%9C%BC%EB%A9%B4-%EA%B1%B8%EB%A6%AC%EB%8A%94-%EB%B3%91-2)
+- [2022-데이터시각화 08wk-12](https://guebin.github.io/DV2022/posts/2022-10-24-8wk-12.html#fifa23-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D)
+- [2022-데이터시각화 10wk-1](https://guebin.github.io/DV2022/posts/2022-11-07-10wk-1.html#barplot)
+- [2022-데이터시각화 10wk-2](https://guebin.github.io/DV2022/posts/2022-11-09-10wk-2.html#%EC%8B%AC%EC%8A%A8%EC%9D%98-%EC%97%AD%EC%84%A4)
+- [2022-데이터시각화 11wk-1](https://guebin.github.io/DV2022/posts/2022-11-14-11wk-1.html#data2-%ED%95%B8%EB%93%9C%ED%8F%B0%EC%A0%90%EC%9C%A0%EC%9C%A8)
+- [2022-데이터시각화 11wk-2](https://guebin.github.io/DV2022/posts/2022-11-16-11wk-2.html#%EC%9E%90%EB%A3%8C%EB%B6%84%EC%84%9D-%EC%A0%80%EC%B6%9C%EC%82%B0)
+- [2022-데이터시각화 12wk-2](https://guebin.github.io/DV2022/posts/2022-11-23-12wk-2.html#%EC%84%B8%EA%B3%84%EC%A7%80%EB%8F%84-%EA%B7%B8%EB%A6%AC%EA%B8%B0)
