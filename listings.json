@@ -5,7 +5,12 @@
   },
   {
     "listing": "/3_3.html",
-    "items": []
+    "items": [
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson16.html",
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson17.html",
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson18.html",
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson19.html"
+    ]
   },
   {
     "listing": "/1_4.html",
@@ -21,7 +26,12 @@
   },
   {
     "listing": "/3_2.html",
-    "items": []
+    "items": [
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson16.html",
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson17.html",
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson18.html",
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson19.html"
+    ]
   },
   {
     "listing": "/1_3.html",
@@ -29,13 +39,24 @@
   },
   {
     "listing": "/3_1.html",
-    "items": []
+    "items": [
+      "/posts/Day3/07_DataWrangling/2023-02-01-Lesson14.html",
+      "/posts/Day3/07_DataWrangling/2023-02-01-Lesson15.html"
+    ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/index.html",
-      "/posts/post-with-code/index.html"
+      "/posts/Day3/07_DataWrangling/2023-02-01-Lesson14.html",
+      "/posts/Day3/07_DataWrangling/2023-02-01-Lesson15.html",
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson16.html",
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson16.html",
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson17.html",
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson17.html",
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson18.html",
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson18.html",
+      "/posts/Day3/08_ggplot2/2023-02-01-Lesson19.html",
+      "/posts/Day3/09_PandasBackend/2023-02-01-Lesson19.html"
     ]
   },
   {
