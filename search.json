@@ -1,10 +1,45 @@
 [
   {
+    "objectID": "1_1.html",
+    "href": "1_1.html",
+    "title": "Chap 1. 기초문법",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "3_3.html",
+    "href": "3_3.html",
+    "title": "Chap 9. 판다스 백엔드",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "1_4.html",
+    "href": "1_4.html",
+    "title": "Chap 4. 간단한 데이터 조작",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "2023년도 동계 WORKSHOP\n파이썬을 이용한 통계자료분석\nguebin@jbnu.ac.kr\n자연과학대학 본관 205호"
+  },
+  {
+    "objectID": "1_2.html",
+    "href": "1_2.html",
+    "title": "Chap 2. Numpy",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "2_2.html",
+    "href": "2_2.html",
+    "title": "Chap 6. 함수, 제어, 반복",
+    "section": "",
+    "text": "No matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -21,10 +56,38 @@
     "text": "This is a post with executable code."
   },
   {
+    "objectID": "3_2.html",
+    "href": "3_2.html",
+    "title": "Chap 8. 고차원 자료 시각화",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "1_3.html",
+    "href": "1_3.html",
+    "title": "Chap 3. Pandas",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "3_1.html",
+    "href": "3_1.html",
+    "title": "Chap 7. Data Wrangling",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "IP2023WIN",
+    "title": "파이썬을 이용한 통계자료분석",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 29, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Day1\n\n2022-파이썬입문 3월7일 // 영상4~8\n2022-파이썬입문 3월14일 // 모든영상\n2022-파이썬입문 3월16일 // 모든영상\n2022-파이썬입문 3월21일 // 모든영상\n2022-파이썬입문 3월23일 // 모든영상\n2022-파이썬입문 4월6일 // 모든영상\n2022-파이썬입문 4월11일 // 모든영상\n2022-파이썬입문 5월6일 // 모든영상\n\nDay2\n\n2022-데이터시각화 06wk-1,2 // 모든영상\n2022-데이터시각화 07wk-1 // 영상1,2\n2022-데이터시각화 08wk-1,2 // 영상1,2\n\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 29, 2023\n\n\nWelcome To My Blog\n\n\nTristan O’Malley\n\n\n\n\nFeb 1, 2023\n\n\nPost With Code\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "2_1.html",
+    "href": "2_1.html",
+    "title": "Chap 5. 모듈",
+    "section": "",
+    "text": "No matching items"
   }
 ]

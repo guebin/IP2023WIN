@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>IP2023WIN</title>
+<title>2023년도 동계 WORKSHOP - 파이썬을 이용한 통계자료분석</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">IP2023WIN</span>
+    <span class="navbar-title">2023년도 동계 WORKSHOP</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -116,12 +116,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/guebin/IP2023WIN"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://www.youtube.com/channel/UCQk9RyBNgXc7ORIsYlOfQrg"><i class="bi bi-youtube" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -130,12 +130,20 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">파이썬을 이용한 통계자료분석</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">IP2023WIN</h1>
+    <div class="quarto-title column-page-right">
+      <h1 class="title d-none d-lg-block">파이썬을 이용한 통계자료분석</h1>
                       </div>
   </div>
     
@@ -150,99 +158,165 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Day 1: 파이썬 입문</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_1.html" class="sidebar-item-text sidebar-link">Chap 1. 기초문법</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_2.html" class="sidebar-item-text sidebar-link">Chap 2. Numpy</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_3.html" class="sidebar-item-text sidebar-link">Chap 3. Pandas</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_4.html" class="sidebar-item-text sidebar-link">Chap 4. 간단한 데이터 조작</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Day 2: 파이썬 프로그래밍</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_1.html" class="sidebar-item-text sidebar-link">Chap 5. 모듈</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_2.html" class="sidebar-item-text sidebar-link">Chap 6. 함수, 제어, 반복</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Day 3: 데이터 시각화</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_1.html" class="sidebar-item-text sidebar-link">Chap 7. Data Wrangling</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_2.html" class="sidebar-item-text sidebar-link">Chap 8. 고차원 자료 시각화</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_3.html" class="sidebar-item-text sidebar-link">Chap 9. 판다스 백엔드</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
 
 
+<p><a href="https://youtube.com/playlist?list=PLQqh36zP38-zUUTgJ4orAv6eRjL2_ubh4"><strong>Day1</strong></a></p>
+<ul>
+<li><a href="https://guebin.github.io/IP2022/2022/03/07/(1주차)-3월7일.html">2022-파이썬입문 3월7일 // 영상4~8</a></li>
+<li><a href="https://guebin.github.io/IP2022/2022/03/14/(2주차)-3월14일.html">2022-파이썬입문 3월14일 // 모든영상</a></li>
+<li><a href="https://guebin.github.io/IP2022/2022/03/16/(3주차)-3월16일.html">2022-파이썬입문 3월16일 // 모든영상</a></li>
+<li><a href="https://guebin.github.io/IP2022/2022/03/21/(3주차)-3월21일.html">2022-파이썬입문 3월21일 // 모든영상</a></li>
+<li><a href="https://guebin.github.io/IP2022/2022/03/23/(4주차)-3월23일.html">2022-파이썬입문 3월23일 // 모든영상</a></li>
+<li><a href="https://guebin.github.io/IP2022/2022/04/06/(6주차)-4월6일.html">2022-파이썬입문 4월6일 // 모든영상</a></li>
+<li><a href="https://guebin.github.io/IP2022/2022/04/11/(6주차)-4월11일.html">2022-파이썬입문 4월11일 // 모든영상</a></li>
+<li><a href="https://guebin.github.io/IP2022/2022/05/04/(10주차)-5월6일.html">2022-파이썬입문 5월6일 // 모든영상</a></li>
+</ul>
+<p><a href="https://youtube.com/playlist?list=PLQqh36zP38-xwosDiRJT6U1aEtPf4RjWz"><strong>Day2</strong></a></p>
+<ul>
+<li><a href="https://guebin.github.io/DV2022/posts/2022-10-12-6wk-12.html">2022-데이터시각화 06wk-1,2 // 모든영상</a></li>
+<li><a href="https://guebin.github.io/DV2022/posts/2022-10-17-7wk-1.html">2022-데이터시각화 07wk-1 // 영상1,2</a></li>
+<li><a href="https://guebin.github.io/DV2022/posts/2022-10-24-8wk-12.html">2022-데이터시각화 08wk-1,2 // 영상1,2</a></li>
+</ul>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1675177200000" data-listing-file-modified-sort="1675221384577" data-listing-reading-time-sort="0.035">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html"> <img src="./posts/post-with-code/image.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/post-with-code/index.html">
-<h3 class="no-anchor listing-title">
-Post With Code
-</h3>
-<div class="listing-subtitle">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<a href="./posts/post-with-code/index.html">
-<div class="listing-description">
-This is a post with executable code.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html">
-<div class="listing-date">
-Feb 1, 2023
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1674918000000" data-listing-file-modified-sort="1675221384577" data-listing-reading-time-sort="0.16">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html"> <img src="./posts/welcome/thumbnail.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/welcome/index.html">
-<h3 class="no-anchor listing-title">
-Welcome To My Blog
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<a href="./posts/welcome/index.html">
-<div class="listing-description">
-This is the first post in a Quarto blog. Welcome!
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html">
-<div class="listing-date">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="news" data-listing-date-sort="1674918000000" data-listing-file-modified-sort="1675221384577" data-listing-reading-time-sort="0.16" data-listing-title-sort="Welcome To My Blog" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
 Jan 29, 2023
-</div>
-<div class="listing-author">
+</td>
+<td class="listing-title">
+<a href="./posts/welcome/index.html" class="title">Welcome To My Blog</a>
+</td>
+<td class="listing-author">
 Tristan O’Malley
-</div>
-</a>
-</div>
-</div>
-</div>
+</td>
+</tr>
+<tr data-index="1" data-categories="news,code,analysis" data-listing-date-sort="1675177200000" data-listing-file-modified-sort="1675221384577" data-listing-reading-time-sort="0.035" data-listing-title-sort="Post With Code" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
+Feb 1, 2023
+</td>
+<td class="listing-title">
+<a href="./posts/post-with-code/index.html" class="title">Post With Code</a>
+</td>
+<td class="listing-author">
+Harlow Malloc
+</td>
+</tr>
+</tbody>
+
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
