@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.280">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -299,7 +299,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#imports" id="toc-imports" class="nav-link active" data-scroll-target="#imports">imports</a></li>
+  <li><a href="#ref" id="toc-ref" class="nav-link active" data-scroll-target="#ref">ref</a></li>
+  <li><a href="#imports" id="toc-imports" class="nav-link" data-scroll-target="#imports">imports</a></li>
   <li><a href="#자료분석-저출산" id="toc-자료분석-저출산" class="nav-link" data-scroll-target="#자료분석-저출산">자료분석: 저출산</a>
   <ul class="collapse">
   <li><a href="#데이터읽기-pd.read_html" id="toc-데이터읽기-pd.read_html" class="nav-link" data-scroll-target="#데이터읽기-pd.read_html">데이터읽기 // <code>pd.read_html()</code></a></li>
@@ -321,9 +322,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <p><a href="https://colab.research.google.com/github/guebin/IP2023WIN/blob/main/posts/Day3/09_PandasBackend/2023-02-01-Lesson21.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" style="text-align: left"></a></p>
+<section id="ref" class="level1">
+<h1>ref</h1>
+<p><a href="https://guebin.github.io/DV2022/posts/2022-11-16-11wk-2.html#자료분석-저출산" class="uri">https://guebin.github.io/DV2022/posts/2022-11-16-11wk-2.html#자료분석-저출산</a></p>
+</section>
 <section id="imports" class="level1">
 <h1>imports</h1>
-<div class="cell" data-execution_count="37">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -337,14 +342,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>ref: https://ko.wikipedia.org/wiki/대한민국의_저출산</li>
 </ul>
 <p><code>-</code> 위의 url에서 3,5번째 테이블을 읽고싶다. - 3번째 테이블: 시도별 출산율 - 5번째 테이블: 시도별 출생아 수</p>
-<div class="cell" data-execution_count="38">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>_dflst <span class="op">=</span> pd.read_html(<span class="st">'https://ko.wikipedia.org/wiki/</span><span class="sc">%E</span><span class="st">B%8C</span><span class="sc">%80%</span><span class="st">ED</span><span class="sc">%95%</span><span class="st">9C</span><span class="sc">%E</span><span class="st">B%AF%BC</span><span class="sc">%E</span><span class="st">A%B5%AD</span><span class="sc">%E</span><span class="st">C%9D%98_</span><span class="sc">%E</span><span class="st">C%A0</span><span class="sc">%80%</span><span class="st">EC%B6%9C</span><span class="sc">%E</span><span class="st">C</span><span class="sc">%82%</span><span class="st">B0'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2"></a>_df1 <span class="op">=</span> _dflst[<span class="dv">2</span>] </span>
 <span id="cb2-3"><a href="#cb2-3"></a>_df2 <span class="op">=</span> _dflst[<span class="dv">4</span>] </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="39">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>_df1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="39">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>pd.DataFrame(np.array([[<span class="dv">1</span>,<span class="dv">2</span>],[<span class="dv">3</span>,<span class="dv">4</span>]])).applymap(<span class="kw">lambda</span> x: x<span class="op">+</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
 
 <div>
 
@@ -352,411 +357,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <thead>
     <tr>
       <th></th>
-      <th>지역/연도[6]</th>
-      <th>2005</th>
-      <th>2006[7]</th>
-      <th>2007</th>
-      <th>2008[8]</th>
-      <th>2009[9]</th>
-      <th>2010</th>
-      <th>2011</th>
-      <th>2012</th>
-      <th>2013</th>
-      <th>2014</th>
-      <th>2015</th>
-      <th>2016</th>
-      <th>2017</th>
-      <th>2018</th>
-      <th>2019</th>
-      <th>2020</th>
-      <th>2021</th>
+      <th>0</th>
+      <th>1</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>서울</td>
-      <td>0.92</td>
-      <td>0.97</td>
-      <td>1.06</td>
-      <td>1.01</td>
-      <td>0.96</td>
-      <td>1.02</td>
-      <td>1.01</td>
-      <td>1.06</td>
-      <td>0.97</td>
-      <td>0.98</td>
-      <td>1.00</td>
-      <td>0.94</td>
-      <td>0.84</td>
-      <td>0.76</td>
-      <td>0.72</td>
-      <td>0.64</td>
-      <td>0.63</td>
+      <td>2</td>
+      <td>3</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>부산</td>
-      <td>0.88</td>
-      <td>0.91</td>
-      <td>1.02</td>
-      <td>0.98</td>
-      <td>0.94</td>
-      <td>1.05</td>
-      <td>1.08</td>
-      <td>1.14</td>
-      <td>1.05</td>
-      <td>1.09</td>
-      <td>1.14</td>
-      <td>1.10</td>
-      <td>0.98</td>
-      <td>0.90</td>
-      <td>0.83</td>
-      <td>0.75</td>
-      <td>0.73</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>대구</td>
-      <td>0.99</td>
-      <td>1.00</td>
-      <td>1.13</td>
-      <td>1.07</td>
-      <td>1.03</td>
-      <td>1.11</td>
-      <td>1.15</td>
-      <td>1.22</td>
-      <td>1.13</td>
-      <td>1.17</td>
-      <td>1.22</td>
-      <td>1.19</td>
-      <td>1.07</td>
-      <td>0.99</td>
-      <td>0.93</td>
-      <td>0.81</td>
-      <td>0.78</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>인천</td>
-      <td>1.07</td>
-      <td>1.11</td>
-      <td>1.25</td>
-      <td>1.19</td>
-      <td>1.14</td>
-      <td>1.21</td>
-      <td>1.23</td>
-      <td>1.30</td>
-      <td>1.20</td>
-      <td>1.21</td>
-      <td>1.22</td>
-      <td>1.14</td>
-      <td>1.01</td>
-      <td>1.01</td>
-      <td>0.94</td>
-      <td>0.83</td>
-      <td>0.78</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>광주</td>
-      <td>1.10</td>
-      <td>1.14</td>
-      <td>1.26</td>
-      <td>1.20</td>
-      <td>1.14</td>
-      <td>1.22</td>
-      <td>1.23</td>
-      <td>1.30</td>
-      <td>1.17</td>
-      <td>1.20</td>
-      <td>1.21</td>
-      <td>1.17</td>
-      <td>1.05</td>
-      <td>0.97</td>
-      <td>0.91</td>
-      <td>0.81</td>
-      <td>0.90</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>대전</td>
-      <td>1.10</td>
-      <td>1.15</td>
-      <td>1.27</td>
-      <td>1.22</td>
-      <td>1.16</td>
-      <td>1.21</td>
-      <td>1.26</td>
-      <td>1.32</td>
-      <td>1.23</td>
-      <td>1.25</td>
-      <td>1.28</td>
-      <td>1.19</td>
-      <td>1.08</td>
-      <td>0.95</td>
-      <td>0.88</td>
-      <td>0.81</td>
-      <td>0.81</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>울산</td>
-      <td>1.18</td>
-      <td>1.24</td>
-      <td>1.40</td>
-      <td>1.34</td>
-      <td>1.31</td>
-      <td>1.37</td>
-      <td>1.39</td>
-      <td>1.48</td>
-      <td>1.39</td>
-      <td>1.44</td>
-      <td>1.49</td>
-      <td>1.42</td>
-      <td>1.26</td>
-      <td>1.13</td>
-      <td>1.08</td>
-      <td>0.99</td>
-      <td>0.94</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>세종</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>1.60</td>
-      <td>1.44</td>
-      <td>1.35</td>
-      <td>1.89</td>
-      <td>1.82</td>
-      <td>1.67</td>
-      <td>1.57</td>
-      <td>1.47</td>
-      <td>1.28</td>
-      <td>1.28</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>경기</td>
-      <td>1.17</td>
-      <td>1.23</td>
-      <td>1.35</td>
-      <td>1.29</td>
-      <td>1.23</td>
-      <td>1.31</td>
-      <td>1.31</td>
-      <td>1.36</td>
-      <td>1.23</td>
-      <td>1.24</td>
-      <td>1.27</td>
-      <td>1.19</td>
-      <td>1.07</td>
-      <td>1.00</td>
-      <td>0.94</td>
-      <td>0.88</td>
-      <td>0.85</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>강원</td>
-      <td>1.18</td>
-      <td>1.19</td>
-      <td>1.35</td>
-      <td>1.25</td>
-      <td>1.25</td>
-      <td>1.31</td>
-      <td>1.34</td>
-      <td>1.37</td>
-      <td>1.25</td>
-      <td>1.25</td>
-      <td>1.31</td>
-      <td>1.24</td>
-      <td>1.12</td>
-      <td>1.07</td>
-      <td>1.08</td>
-      <td>1.04</td>
-      <td>0.98</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>충북</td>
-      <td>1.19</td>
-      <td>1.22</td>
-      <td>1.39</td>
-      <td>1.32</td>
-      <td>1.32</td>
-      <td>1.40</td>
-      <td>1.43</td>
-      <td>1.49</td>
-      <td>1.37</td>
-      <td>1.36</td>
-      <td>1.41</td>
-      <td>1.36</td>
-      <td>1.24</td>
-      <td>1.17</td>
-      <td>1.05</td>
-      <td>0.98</td>
-      <td>0.95</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>충남</td>
-      <td>1.26</td>
-      <td>1.35</td>
-      <td>1.50</td>
-      <td>1.44</td>
-      <td>1.41</td>
-      <td>1.48</td>
-      <td>1.50</td>
-      <td>1.57</td>
-      <td>1.44</td>
-      <td>1.42</td>
-      <td>1.48</td>
-      <td>1.40</td>
-      <td>1.28</td>
-      <td>1.19</td>
-      <td>1.11</td>
-      <td>1.03</td>
-      <td>0.96</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>전북</td>
-      <td>1.17</td>
-      <td>1.20</td>
-      <td>1.37</td>
-      <td>1.31</td>
-      <td>1.28</td>
-      <td>1.37</td>
-      <td>1.41</td>
-      <td>1.44</td>
-      <td>1.32</td>
-      <td>1.33</td>
-      <td>1.35</td>
-      <td>1.25</td>
-      <td>1.15</td>
-      <td>1.04</td>
-      <td>0.97</td>
-      <td>0.91</td>
-      <td>0.85</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>전남</td>
-      <td>1.28</td>
-      <td>1.33</td>
-      <td>1.53</td>
-      <td>1.45</td>
-      <td>1.45</td>
-      <td>1.54</td>
-      <td>1.57</td>
-      <td>1.64</td>
-      <td>1.52</td>
-      <td>1.50</td>
-      <td>1.55</td>
-      <td>1.47</td>
-      <td>1.33</td>
-      <td>1.24</td>
-      <td>1.23</td>
-      <td>1.15</td>
-      <td>1.02</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>경북</td>
-      <td>1.17</td>
-      <td>1.20</td>
-      <td>1.36</td>
-      <td>1.31</td>
-      <td>1.27</td>
-      <td>1.38</td>
-      <td>1.43</td>
-      <td>1.49</td>
-      <td>1.38</td>
-      <td>1.41</td>
-      <td>1.46</td>
-      <td>1.40</td>
-      <td>1.26</td>
-      <td>1.17</td>
-      <td>1.09</td>
-      <td>1.00</td>
-      <td>0.97</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>경남</td>
-      <td>1.18</td>
-      <td>1.25</td>
-      <td>1.43</td>
-      <td>1.37</td>
-      <td>1.32</td>
-      <td>1.41</td>
-      <td>1.45</td>
-      <td>1.50</td>
-      <td>1.37</td>
-      <td>1.41</td>
-      <td>1.44</td>
-      <td>1.36</td>
-      <td>1.23</td>
-      <td>1.12</td>
-      <td>1.05</td>
-      <td>0.95</td>
-      <td>0.90</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>제주</td>
-      <td>1.30</td>
-      <td>1.36</td>
-      <td>1.48</td>
-      <td>1.39</td>
-      <td>1.38</td>
-      <td>1.46</td>
-      <td>1.49</td>
-      <td>1.60</td>
-      <td>1.43</td>
-      <td>1.48</td>
-      <td>1.48</td>
-      <td>1.43</td>
-      <td>1.31</td>
-      <td>1.22</td>
-      <td>1.15</td>
-      <td>1.02</td>
-      <td>0.95</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>전국</td>
-      <td>1.08</td>
-      <td>1.13</td>
-      <td>1.25</td>
-      <td>1.19</td>
-      <td>1.15</td>
-      <td>1.23</td>
-      <td>1.24</td>
-      <td>1.30</td>
-      <td>1.19</td>
-      <td>1.21</td>
-      <td>1.24</td>
-      <td>1.17</td>
-      <td>1.05</td>
-      <td>0.98</td>
-      <td>0.92</td>
-      <td>0.84</td>
-      <td>0.81</td>
+      <td>4</td>
+      <td>5</td>
     </tr>
   </tbody>
 </table>
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="40">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>_df2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="40">
 
@@ -1076,7 +697,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <p><code>-</code> 데이터정리</p>
-<div class="cell" data-execution_count="41">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="41">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>df1 <span class="op">=</span> _df1.drop(<span class="dv">17</span>)<span class="op">\</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a>.melt(id_vars<span class="op">=</span><span class="st">'지역/연도[6]'</span>)<span class="op">\</span></span>
 <span id="cb5-3"><a href="#cb5-3"></a>.assign(variable <span class="op">=</span> <span class="kw">lambda</span> df: <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x[:<span class="dv">4</span>], df.variable)))<span class="op">\</span></span>
@@ -1169,7 +790,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="42">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="42">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>df2 <span class="op">=</span> _df2.drop(<span class="dv">17</span>)<span class="op">\</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a>.melt(id_vars<span class="op">=</span><span class="st">'지역/연도[6]'</span>)<span class="op">\</span></span>
 <span id="cb6-3"><a href="#cb6-3"></a>.assign(value <span class="op">=</span> <span class="kw">lambda</span> df: <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: <span class="va">None</span> <span class="cf">if</span> x<span class="op">==</span><span class="st">'-'</span> <span class="cf">else</span> <span class="bu">float</span>(x), df.value)))<span class="op">\</span></span>
@@ -1264,7 +885,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="시각화i-전국-출생아수-시각화" class="level2">
 <h2 class="anchored" data-anchor-id="시각화i-전국-출생아수-시각화">시각화I: 전국 출생아수 시각화</h2>
-<div class="cell" data-execution_count="43">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="43">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>df2.groupby([<span class="st">'연도'</span>])<span class="op">\</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a>.agg({<span class="st">'출생아수'</span>:np.<span class="bu">sum</span>})<span class="op">\</span></span>
 <span id="cb7-3"><a href="#cb7-3"></a>.reset_index()<span class="op">\</span></span>
@@ -1305,7 +926,7 @@ if (outputEl) {{
 <section id="시각화ii-시도별-출생아수-시각화" class="level2">
 <h2 class="anchored" data-anchor-id="시각화ii-시도별-출생아수-시각화">시각화II: 시도별 출생아수 시각화</h2>
 <p><code>-</code> 시각화예시1</p>
-<div class="cell" data-execution_count="44">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="44">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>df2.plot.line(backend<span class="op">=</span><span class="st">'plotly'</span>, x<span class="op">=</span><span class="st">'연도'</span>,y<span class="op">=</span><span class="st">'출생아수'</span>,color<span class="op">=</span><span class="st">'지역'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
@@ -1340,7 +961,7 @@ if (outputEl) {{
 <li>서울과 경기가 특이함</li>
 </ul>
 <p><code>-</code> 시각화예시2</p>
-<div class="cell" data-execution_count="45">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="45">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>df2.plot.area(backend<span class="op">=</span><span class="st">'plotly'</span>,x<span class="op">=</span><span class="st">'연도'</span>,y<span class="op">=</span><span class="st">'출생아수'</span>,color<span class="op">=</span><span class="st">'지역'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
@@ -1378,7 +999,7 @@ if (outputEl) {{
 </section>
 <section id="시각화iii-시도별-출산율-시각화" class="level2">
 <h2 class="anchored" data-anchor-id="시각화iii-시도별-출산율-시각화">시각화III: 시도별 출산율 시각화</h2>
-<div class="cell" data-execution_count="46">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="46">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>df1.plot.line(backend<span class="op">=</span><span class="st">'plotly'</span>,x<span class="op">=</span><span class="st">'연도'</span>,y<span class="op">=</span><span class="st">'출산율'</span>,color<span class="op">=</span><span class="st">'지역'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
@@ -1425,7 +1046,7 @@ if (outputEl) {{
 <section id="데이터의-수정-1-df2-상태에서-수정" class="level2">
 <h2 class="anchored" data-anchor-id="데이터의-수정-1-df2-상태에서-수정">데이터의 수정 (1): df2 상태에서 수정</h2>
 <p><code>-</code> df2의 수정</p>
-<div class="cell" data-execution_count="47">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="47">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>df2.sort_values(<span class="st">"출생아수"</span>)[:<span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="47">
 
@@ -1510,7 +1131,7 @@ if (outputEl) {{
 <ul>
 <li>출생아수 &lt; 1000 이면 출생아수 * 1000 을 수행하는 함수를 구현하자.</li>
 </ul>
-<div class="cell" data-execution_count="48">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="48">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>df2.assign(출생아수<span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x<span class="op">*</span><span class="dv">1000</span> <span class="cf">if</span> x<span class="op">&lt;</span><span class="dv">1000</span> <span class="cf">else</span> x, df2.출생아수)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="48">
 
@@ -1599,7 +1220,7 @@ if (outputEl) {{
 </div>
 </div>
 <p><code>-</code> 잘 변환되었는지 확인하기 위한 시각화</p>
-<div class="cell" data-execution_count="49">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="49">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a>df2.assign(출생아수<span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="kw">lambda</span> x: x<span class="op">*</span><span class="dv">1000</span> <span class="cf">if</span> x<span class="op">&lt;</span><span class="dv">1000</span> <span class="cf">else</span> x, df2.출생아수)))<span class="op">\</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a>.plot.area(x<span class="op">=</span><span class="st">'연도'</span>,y<span class="op">=</span><span class="st">'출생아수'</span>,color<span class="op">=</span><span class="st">'지역'</span>,backend<span class="op">=</span><span class="st">'plotly'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
@@ -1638,7 +1259,7 @@ if (outputEl) {{
 <section id="데이터의-수정-2-_df2-상태에서-수정" class="level2">
 <h2 class="anchored" data-anchor-id="데이터의-수정-2-_df2-상태에서-수정">데이터의 수정 (2): _df2 상태에서 수정</h2>
 <p><code>-</code> applymap</p>
-<div class="cell" data-execution_count="50">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="50">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a>_df2.set_index(<span class="st">'지역/연도[6]'</span>) <span class="co"># applymap을 쓰기 위해서 임시로 지역/연도[6]을 인덱스로만듬 </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="50">
 
@@ -1954,7 +1575,7 @@ if (outputEl) {{
 </div>
 </div>
 <p><code>-</code> 방법1</p>
-<div class="cell" data-execution_count="51">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="51">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"></a>_df2.set_index(<span class="st">'지역/연도[6]'</span>)<span class="op">\</span></span>
 <span id="cb15-2"><a href="#cb15-2"></a>.applymap(<span class="kw">lambda</span> x: <span class="va">None</span> <span class="cf">if</span> x <span class="op">==</span> <span class="st">'-'</span> <span class="cf">else</span> <span class="bu">float</span>(x))<span class="op">\</span></span>
 <span id="cb15-3"><a href="#cb15-3"></a>.applymap(<span class="kw">lambda</span> x: x<span class="op">*</span><span class="dv">1000</span> <span class="cf">if</span> x<span class="op">&lt;</span><span class="dv">1000</span> <span class="cf">else</span> x)<span class="op">\</span></span>
@@ -2047,7 +1668,7 @@ if (outputEl) {{
 </div>
 </div>
 <p><code>-</code> 방법2</p>
-<div class="cell" data-execution_count="52">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="52">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a>df2 <span class="op">=</span> _df2.set_index(<span class="st">'지역/연도[6]'</span>)<span class="op">\</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>.applymap(<span class="kw">lambda</span> x: <span class="va">None</span> <span class="cf">if</span> x <span class="op">==</span> <span class="st">'-'</span> <span class="cf">else</span> <span class="bu">float</span>(x))<span class="op">\</span></span>
 <span id="cb16-3"><a href="#cb16-3"></a>.applymap(<span class="kw">lambda</span> x: x<span class="op">*</span><span class="dv">1000</span> <span class="cf">if</span> x<span class="op">&lt;</span><span class="dv">1000</span> <span class="cf">else</span> x)<span class="op">\</span></span>
@@ -2142,7 +1763,7 @@ if (outputEl) {{
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="53">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="53">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a>df2.plot.area(backend<span class="op">=</span><span class="st">'plotly'</span>,x<span class="op">=</span><span class="st">'연도'</span>,y<span class="op">=</span><span class="st">'출생아수'</span>,color<span class="op">=</span><span class="st">'지역'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
@@ -2185,7 +1806,7 @@ if (outputEl) {{
 </blockquote>
 <p>lineplot을 이용하여 아래와 같이 시각화 하라.</p>
 <p>(풀이)</p>
-<div class="cell" data-execution_count="54">
+<div class="cell" data-vscode="{&quot;languageId&quot;:&quot;python&quot;}" data-execution_count="54">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>df2.groupby(<span class="st">'연도'</span>)[[<span class="st">'출생아수'</span>]].<span class="bu">sum</span>().reset_index().rename({<span class="st">'출생아수'</span>:<span class="st">'년도별출생아수합'</span>},axis<span class="op">=</span><span class="dv">1</span>).<span class="op">\</span></span>
 <span id="cb18-2"><a href="#cb18-2"></a>merge(df2).<span class="bu">eval</span>(<span class="st">'ratio = 출생아수/년도별출생아수합'</span>).query(<span class="st">'지역=="서울"'</span>).<span class="op">\</span></span>
 <span id="cb18-3"><a href="#cb18-3"></a>plot.line(x<span class="op">=</span><span class="st">'연도'</span>,y<span class="op">=</span><span class="st">'ratio'</span>,backend<span class="op">=</span><span class="st">'plotly'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
